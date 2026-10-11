@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>User Registration - Online Banking</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+}
+
+form {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 100px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit] {
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #2980b9;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Online Banking System</h2>
+<h3>User Registration</h3>
+
+<form action="register.jsp" method="post">
+
+    Surname:
+    <input type="text" name="surname" required>
+    <br><br>Name:
+    <input type="text" name="name" required>
+    <br><br>Father Name:
+    <input type="text" name="father_name" required>
+    <br><br>Aadhaar Number:
+    <input type="number" name="adhar_no" required>
+    <br><br>PAN Number:
+    <input type="text" name="pan_no" maxlength="10" required>
+    <br><br>Email:
+    <input type="email" name="email" required>
+    <br><br>Address:
+    <input type="text" name="address">
+    <br><br>Mobile Number:
+    <input type="number" name="mobile_no" required>
+    <br><br>Password:
+    <input type="password" name="password_hash" required>
+    <br><br>
+    <input type="submit" value="Register">
+
+</form>
+        <br><a href="index.jsp">Back to Login</a>
+
+</body>
+</html>
+

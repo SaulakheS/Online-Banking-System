@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Deposit Money</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+}
+
+form {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 100px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit] {
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #2980b9;
+}
+</style>
+
+    </head>
+    <body>
+        <form name="deposit" action="deposit.jsp" method="POST">
+          <!--  Enter Account Number:
+            <input type="text" name="accNo" value="" required/><br><br>-->
+            Enter Amount:
+            <input type="number" name="amt" value="" required/><br><br>
+            <input type="submit" value="Deposit" name="Deposit" />
+        </form>
+    </body>
+</html>
